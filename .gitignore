@@ -1,0 +1,15 @@
+CurrencyHistorian/node_modules/**/*
+CurrencyHistorian/.expo/*
+firebasestuff/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+CurrencyHistorian/web-build/
+
+# macOS
+.DS_Store
+
