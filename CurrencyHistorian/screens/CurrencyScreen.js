@@ -5,7 +5,7 @@ import { Alert, Button, StyleSheet, TextInput, Text,ScrollView, ActivityIndicato
 import { ListItem } from 'react-native-elements';
 import firebase from '../database/firebaseDb';
 
-class UserScreen extends Component {
+class CurrencyScreen extends Component {
 
   constructor() {
     super();
@@ -36,7 +36,7 @@ class UserScreen extends Component {
         Description,
         ID,
         ImgURL,
-        Status
+        //Status,
       });
     });
     this.setState({
@@ -93,4 +93,4 @@ const styles = StyleSheet.create({
   }
 })
 
-export default UserScreen;
+export default CurrencyScreen;

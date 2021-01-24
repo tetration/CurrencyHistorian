@@ -164,7 +164,7 @@ class CurrencyDetailScreen extends Component {
         <View>
           <Button
             title='Cancel'
-            onPress={this.cancelUpdateCurrency}
+            onPress={() => this.props.navigation.navigate('CurrencyScreen')}
             color="#f2d213"
           />
         </View>
