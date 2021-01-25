@@ -36,7 +36,7 @@ class CurrencyScreen extends Component {
         Description,
         ID,
         ImgURL,
-        //Status,
+        Status,
       });
     });
     this.setState({
@@ -57,13 +57,14 @@ class CurrencyScreen extends Component {
       <ScrollView style={styles.container}>
           {
             this.state.currencyArr.map((item, i) => {
+              console.log(item);
               return (
                 <ListItem
                   key={i}
                   chevron
                   bottomDivider
                   title={item.Currency}
-                  subtitle={item.Description}
+                  subtitle={item.Data}
                   onPress={() => {
                     this.props.navigation.navigate('CurrencyDetailScreen', {
                       userkey: item.key
@@ -79,6 +80,7 @@ class CurrencyScreen extends Component {
 
 const styles = StyleSheet.create({
   container: {
+   color: "black",
    flex: 1,
    paddingBottom: 22
   },
